@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Operációs rendzserek</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="primary_header">
+      <h1 class="title"> Operációs rendszerek</h1>
+    </div>
+    <div class="topnav">
+  <a  href="index.html">Főoldal</a>
+  <a class="active" href="mukodes.html">Működésük</a>
+  <a href="#contact">Telepítésük</a>
+  <a href="#about">Történetük</a>
+  <a href="#about">Pontozólap</a>
+</div>
+  </header>
+
+  <section>
+    <h2 class="noDisplay">Main Content</h2>
+    <article class="left_article">
+	  <h3 id="h3">
+		  <bold>
+		    
+	      <strong>Az operációs rendszer működési struktúrája </strong></bold>
+	  </h3>
+      <p id="p">Rendszermag (angolul kernel): az operációs rendszer alapja, egy háttérben futó, alapvető feladatokat ellátó program, amely felelős a hardver erőforrásainak kezeléséért (beleértve a memóriát és a processzort is).</p> 
+      <p id="p"> multiplexálás: azon módszer a többfeladatos rendszerekben, ahol a kernel szabja meg, hogy melyik program és menynyi ideig használhatja a hardver egy adott részét. </p>
+		
+
+		<p id="p">Egy számítógép működéséhez nem feltétlenül szükséges operációs rendszer és annak magja: az egyes programok közvetlenül betölthetőek és használhatóak a „csupasz vason”, feltéve, hogy a programozó vállalja azt, hogy mindent közvetlenül, operációs rendszeri segítség nélkül fog kezelni. A kezdeti számítógépek esetén ez volt a normális működési mód: minden egyes új program elindításához a gépet újra kellett indítani. Az idő előrehaladtával apró segédprogramok, rutinok állandósulni kezdtek, azokat több programhoz is használták, és kialakultak azok a szokásos programrészek, melyeket újraindítás után újra használni szerettek volna, mint például egyes betöltő (indító, boot) programok vagy hibakeresők. Ezekből alakultak ki a kezdeti operációs rendszerek. </p>
+		<h3 id="h3"><bold><strong>A kernelek négy fő kategóriája: </strong></bold></h3>
+		<ul><li><p id="p">a monolitikus kernelek gazdag és hatékony absztrakciókat biztosítanak az alattuk található hardware elemekhez; </p></li>
+			<li> <p id="p">a mikrokernelek egy kisméretű alapkészletet biztosítanak a hardware kezeléséhez, és számos alkalmazással – amiket „szervereknek” nevezünk – biztosítják a további, részletesebb funkcionalitást;</p></li>
+			<li><p id="p">a hibrid vagy módosított mikrokernelek hasonlóak a mikrokernelekhez de több, részletesebb kódot tartalmaznak a kernelmagban, hogy nagyobb sebességet érjenek el; </p></li>
+		<li><p id="p">az exokernelek (vagy rendszer rutinkönyvtárak) nem biztosítanak absztrakciókat vagy állandó rendszermagot, hanem egy programokban használható rutinkönyvtárból állnak, ami a hardver közvetlen vagy közvetett elérését biztosítja. </p></li></ul>
+		
+		
+		<h3 id="h3"><bold><strong> A kernel feladatai:  </strong></bold></h3>
+		<ul><li><p id="p">perifériák kezelése (billentyűzet, képernyő stb.)  </p></li>
+			<li><p id="p">memória-hozzáférés biztosítása  </p></li>
+				<li><p id="p">processzor idejének elosztása   </p></li>
+				<li><p id="p">háttértárolók kezelése    </p></li>
+			<li><p id="p">fájlrendszerek kezelése  </p></li></ul>
+			
+		<h3 id="h3"><bold><strong> A shell feladatai:  </strong></bold></h3>
+		<ul><li><p id="p">Kapcsolattartás a felhasználóval (felhasználói felület)   </p></li>
+			<li><p id="p">Alkalmazások futásának kezelése (indítás, futási feltételek biztosítása, leállítás)  </p></li></ul>
+		
+    </article>
+</section>
+  
+ 
+  <footer class="secondary_header footer">
+    <div class="copyright">&copy;2020 - <strong>Operációs rendszerek</strong></div>
+  </footer>
+</div>
+</body>
+</html>
