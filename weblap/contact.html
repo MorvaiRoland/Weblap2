@@ -29,7 +29,7 @@ https://templatemo.com/tm-550-diagoona
                     <div class="tm-site-header media">
                           <img class="kep" src="operating-system.png">
                         <div class="media-body">
-                            <h1 class="tm-sitename text-uppercase">Operációs Rendszerek</h1>
+                            <h1 class="tm-sitename text-uppercase"><a  href="index.html">Operációs Rendszerek</a></h1>
                             <p class="tm-slogon">Windows/Linux/Android/macOS</p>
                         </div>        
                     </div>
@@ -55,6 +55,9 @@ https://templatemo.com/tm-550-diagoona
                                 <li class="nav-item active">
                                     <a class="nav-link tm-nav-link" href="contact.html">Kapcsolat <span class="sr-only">(current)</span></a>
                                 </li>
+								<li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="pontozolap.html">Pontozólap</a>
+                                </li>  
                             </ul>                            
                         </div>                        
                     </nav>
@@ -128,5 +131,13 @@ https://templatemo.com/tm-550-diagoona
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>
     <script src="js/templatemo-script.js"></script>
+	<div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
 </body>
 </html>
